@@ -70,7 +70,6 @@ class MainActivity : AppCompatActivity() {
     private fun initializeOverlays() {
         val overlayData = OverlayData(
             channelId = SAMPLE_CHANNEL_ID,
-            debug = true,
             streamId = SAMPLE_STREAM_ID,
             streamType = OverlayData.StreamType.VOD)
 
