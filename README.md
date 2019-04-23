@@ -1,4 +1,4 @@
-# Android Sample Player Application
+# Android Sample Player Application in Kotlin
 
 Sample Google ExoPlayer application implementing the PTV SDK.
 
