@@ -82,7 +82,7 @@ class MainActivity : AppCompatActivity() {
                 get() = exoplayer?.currentPosition
         })
 
-        // Add playback lifecycle event listeners.
+        // Add player event listeners to determine overlay visibility.
         exoplayer?.addListener(object : Player.DefaultEventListener() {
             override fun onPlayerStateChanged(playWhenReady: Boolean, playbackState: Int) {
                 overlayManager?.isVisible = playWhenReady && playbackState == Player.STATE_READY
