@@ -70,11 +70,10 @@ class MainActivity : AppCompatActivity() {
     private fun initializeOverlays() {
         val overlayData = OverlayData(
             channelId = SAMPLE_CHANNEL_ID,
-            streamId = SAMPLE_STREAM_ID,
-            streamType = OverlayData.StreamType.VOD)
+            streamId = SAMPLE_STREAM_ID)
 
         // Instantiate overlay manager.
-        overlayManager = OverlayManager(supportFragmentManager, R.id.ptv_overlay_view, overlayData)
+        overlayManager = OverlayManager(this, R.id.ptv_overlay_view, overlayData)
 
         // Set the player position for VOD playback.
         overlayManager?.addPlayerListener(object : PlayerChangeListener {
